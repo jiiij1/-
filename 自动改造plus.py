@@ -17,7 +17,7 @@ def action1():
     pyautogui.click(button='right')
     time.sleep(0.02)  
     pyautogui.moveTo(331, 433, duration=0)
-    time.sleep(0.02)  
+    time.sleep(0.02)  # 延迟20毫秒
     pyautogui.click(button='left')
     time.sleep(0.02)  
     pyautogui.hotkey('ctrl', 'c')
@@ -121,7 +121,7 @@ first_column_label = Label(first_column_frame, text="蓝色输入框")
 first_column_label.pack()
 
 first_column_entries = []
-add_first_column_button = Button(first_column_frame, text="添加蓝色输入框", command=lambda: add_entry(first_column_entries, "blue"))
+add_first_column_button = Button(first_column_frame, text="添加蓝色输入框", command=lambda: add_entry(first_column_entries, "#87CEFA"))
 add_first_column_button.pack()
 
 remove_first_column_button = Button(first_column_frame, text="删除蓝色输入框", command=lambda: remove_entry(first_column_entries))
@@ -132,7 +132,7 @@ second_column_label = Label(second_column_frame, text="红色输入框")
 second_column_label.pack()
 
 second_column_entries = []
-add_second_column_button = Button(second_column_frame, text="添加红色输入框", command=lambda: add_entry(second_column_entries, "red"))
+add_second_column_button = Button(second_column_frame, text="添加红色输入框", command=lambda: add_entry(second_column_entries, "#FFB6C1"))
 add_second_column_button.pack()
 
 remove_second_column_button = Button(second_column_frame, text="删除红色输入框", command=lambda: remove_entry(second_column_entries))
@@ -161,6 +161,6 @@ info_label.pack(padx=10, pady=10)
 
 # 绑定全局热键
 keyboard.add_hotkey('[', on_key)
-#拉坨屎
+
 # 运行主循环
 root.mainloop()
