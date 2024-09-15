@@ -17,7 +17,7 @@ def action1():
     pyautogui.click(button='right')
     time.sleep(0.02)  
     pyautogui.moveTo(331, 433, duration=0)
-    time.sleep(0.02)  # 延迟20毫秒
+    time.sleep(0.02)  
     pyautogui.click(button='left')
     time.sleep(0.02)  
     pyautogui.hotkey('ctrl', 'c')
@@ -26,7 +26,6 @@ def action1():
     return clipboard_text
 
 def action2():
-    # 定义动作2的具体操作，例如：
     pyautogui.moveTo(435, 509, duration=0)
     time.sleep(0.02)  
     pyautogui.click(button='right')
