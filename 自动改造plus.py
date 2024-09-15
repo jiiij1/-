@@ -162,6 +162,6 @@ info_label.pack(padx=10, pady=10)
 
 # 绑定全局热键
 keyboard.add_hotkey('[', on_key)
-
+#拉坨屎
 # 运行主循环
 root.mainloop()
